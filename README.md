@@ -1,4 +1,7 @@
-# compose files to use with docker-compose
+# compose file for emoncms
+
+To use with docker-compose
+If you dont have : https://github.com/docker/compose
 
 For persistent datas, create a folder named `data` at the root of the host.
 If you just want an ephemeral test without persistent datas, remove the `/data` volume in the compose file.
