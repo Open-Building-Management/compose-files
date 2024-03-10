@@ -13,6 +13,8 @@ services:
       - MQTT_USER=emonpi
       - MQTT_PASSWORD=emonpimqtt2016
       - MQTT_HOST=localhost
+      - MQTT_BASETOPIC=emon
+      - MQTT_CLIENT_ID=emoncms
       - MQTT_LOG_LEVEL=error
       - CRT_FILE=/etc/ssl/apache2/server.pem
       - KEY_FILE=/etc/ssl/apache2/server.key
