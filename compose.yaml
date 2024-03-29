@@ -19,6 +19,8 @@ services:
       - CRT_FILE=/etc/ssl/apache2/server.pem
       - KEY_FILE=/etc/ssl/apache2/server.key
       - CNAME=localhost
+      - ENFORCE_SECURITY=1
+      - USE_HOSTNAME_FOR_MQTT_TOPIC_CLIENTID=0
     ports:
       - 7443:443
       - 8081:80
