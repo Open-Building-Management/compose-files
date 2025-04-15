@@ -1,0 +1,8 @@
+services:
+  code:
+    image: alexjunk/code:4.98.2_ubuntu22.04_numpy1.26.4_tflite2.13.0_paho2.1.0_pymodbus3.6.8
+    volumes:
+      - ./:/user_code
+    ports:
+      - 8082:8080
+    restart: always
