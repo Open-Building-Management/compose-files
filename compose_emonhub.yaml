@@ -1,0 +1,11 @@
+services:
+  emonhub:
+    image: alexjunk/emonhub
+    volumes:
+      - ./emonhub.conf:/opt/openenergymonitor/emonhub/conf/emonhub.conf
+      - /dev:/dev
+    device_cgroup_rules:
+      - 'c 204:* rmw'
+    command: /opt/openenergymonitor/emonhub/src/./emonhub.py
+    network_mode: service:emoncms
+    restart: always
