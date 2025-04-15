@@ -1,5 +1,5 @@
 
-# intall docker, docker compose, portainer if needed
+<details><summary><h1>install docker (+compose) & portainer if needed</h1></summary>
 
 https://docs.docker.com/engine/install/debian/ or https://docs.docker.com/engine/install/ubuntu/
 
@@ -37,7 +37,9 @@ you can reach portainer UI on https://127.0.0.1:9443
 
 cf https://docs.portainer.io/start/install-ce
 
-# compose file for emoncms
+</details>
+
+# run emoncms alone
 
 For persistent datas, create a folder named `data` at the root of the host.
 If you just want an ephemeral test without persistent datas, remove the `/data` volume in the compose file.
