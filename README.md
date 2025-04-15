@@ -84,6 +84,6 @@ manage the conf files through code :
 
 ![image](https://github.com/user-attachments/assets/630d1fa9-ee86-415d-8978-fc1f70d360cd)
 
-memory consumption with code-server running :
+memory consumption with emoncms, emonhub and code-server running on a raspberry pi3 with 1Go of Ram :
 
 ![image](https://github.com/user-attachments/assets/648ec686-12df-4358-8a22-a5548a364a7e)
