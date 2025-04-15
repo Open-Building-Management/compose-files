@@ -31,7 +31,7 @@ and restart the docker daemon : `sudo systemctl restart docker`
 for container management, it is nice to use portainer :
 
 - create a `portainer_data` volume `sudo docker volume create portainer_data`
-- run portainer as a daemon : `sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.4`
+- run portainer as a daemon : `sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts`
 
 you can reach portainer UI on https://127.0.0.1:9443
 
